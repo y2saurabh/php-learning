@@ -1,0 +1,17 @@
+<?php
+//$dob = birthdate in the form "YYYY-MM-DD"
+//Extract the month, day and year from the $dob
+//Compare to current month, day, year to get AGE
+
+function GetAge($dob="1970-01-01") 
+{ 
+        $dob=explode("-",$dob); 
+        $curMonth = date("m");
+        $curDay = date("j");
+        $curYear = date("Y");
+        $age = $curYear - $dob[0]; 
+        if($curMonth<$dob[1] || ($curMonth==$dob[1] && $curDay<$dob[2])) 
+                $age--; 
+        return $age; 
+}
+?>
