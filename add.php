@@ -6,7 +6,7 @@
 </head>
 
 <body>
-
+<div>This is form to add anything</div>
 <form method="post" action="add-action.php">
 <div><select name="salutation">
 <option value="mr">Mr</option>
